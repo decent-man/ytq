@@ -17,23 +17,27 @@ where:
 - **\<query\>** : Query string to send to YouTube.
 
 e.g ```ytq how to dance```
+	![alt text](scr/demo.gif)
 <!-- attach a gif of default behaviour in action -->
 Default behavior is to simply list the first 15-20 results from youtube's search page.
 
 To display in special formatting, for scripting however, as of now three options are available:
 - **Raw** (`-r`|`--raw`)
 
-	Format results in a handy way to be parsed by scripts. Lists results with a handy seperator that is less likely to appear in output.
+	Format results in a handy way to be parsed by scripts. Lists results with a handy seperator that is less likely to appear in output. (`┊`)
+	![alt text](scr/raw.gif)
 	<!-- attach a gif of raw-mode in action -->
 
 - **First only** (`-f`|`--first`)
 
 	Useful when you don't want to process through the entire list and only want the first result.
+	![alt text](scr/first.gif)
 	<!-- attach a gif of first-only in action -->
 
 - **No Title** (`-not`|`--no-title`)
 
 	Skip printing the title.
+	![alt text](scr/notitle.gif)
 	<!-- attach a gif of no-title in action -->
 
 ## Applications
@@ -51,11 +55,13 @@ Implementation:
 1. **Music Player ﱘ**
 
 	Using `dmenu` + `mpv`:
+	> Demonstration in progress :)
 	<!-- attach a gif of music player in action -->
 
 2. **Video Streaming**
 
 	Using `dmenu` + `mpv`:
+	> Demonstration in progress :)
 	<!-- attach a gif of video streaming in action -->
 
 ## Important
