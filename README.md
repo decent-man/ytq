@@ -18,13 +18,14 @@ where:
 
 e.g ```ytq how to dance```
 	![alt text](scr/demo.gif)
-<!-- attach a gif of default behaviour in action -->
+> Speed varies from 0.3 seconds to 0.5 seconds ( tested using `time`)
+
 Default behavior is to simply list the first 15-20 results from youtube's search page.
 
 To display in special formatting, for scripting however, as of now three options are available:
 - **Raw** (`-r`|`--raw`)
 
-	Format results in a handy way to be parsed by scripts. Lists results with a handy seperator that is less likely to appear in output. (`┊`)
+	Format results in a handy way to be parsed by scripts. Lists results with a handy seperator (`┊`) that is less likely to appear in output.
 	![alt text](scr/raw.gif)
 	<!-- attach a gif of raw-mode in action -->
 
@@ -42,7 +43,7 @@ To display in special formatting, for scripting however, as of now three options
 
 ## Applications
 
-Requirements:
+<u>**Requirements**</u>:
 1. a menu selector (e.g **GUI**: <u>dmenu</u>, <u>rofi</u>, <u>gmrun</u>, etc , **CLI**: <u>select</u>, <u>fzf</u>, <u>sk</u>, etc)
 	> Not required if you plan to use the `first-only` mode.
 2. a media player (e.g mpv, vlc, etc) 
@@ -51,7 +52,7 @@ Requirements:
 	> **OR**: the video needs to be downloaded and then passed to the media player to run. 
 	> A program like `youtube-dl` can be used to download the video.
 
-Implementation:
+<u>**Implementation**</u>:
 1. **Music Player ﱘ**
 
 	Using `dmenu` + `mpv`:
@@ -69,9 +70,9 @@ Implementation:
 This is a simple program that fetches only the <u>first 18 results</u>
 and **does not support** multipage queries at the moment.
 
-**This program does not use the Google API to gather data, but rather relies on
-_hacky_ html/json parsing to retrieve data and hence is limited in functionality and prone 
-to breaking from time to time.**
+**This program does not use the <u>Google API</u> to gather data, but rather relies on
+<u>_hacky_ html/json</u> parsing to retrieve data and hence is limited in functionality and possibly prone 
+to breaking if YouTube changes its response structure.**
 
 ## FAQ
 
