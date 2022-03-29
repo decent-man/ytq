@@ -1,0 +1,32 @@
+    // pub fn parsedoc<X: From<String> + Display>(&self, document: Document) -> Option<Vec<Media<X>>> {
+    //     match self {
+    //         WebTargets::YouTube => {
+    //             let mut medias: Vec<Media<X>> = Vec::new();
+    //             let frame = document.find(Attr("id","video-title"));
+    //             dbg!("Initiating Iteration...");
+    //             for elem in frame {
+    //                 dbg!("Iterating through...");
+    //                 // let anchor = elem.find(Name("a"))
+    //                 //                  .next()
+    //                 //                  .expect("failed to get anchor node");
+    //                 let title = elem.attr("title").expect("Failed to get title").to_string().into();
+    //                 let url   = format!("{}{}", YOUTUBE_BASE_URI, elem.attr("href").expect("Failed to get uri")).into();
+    //                 let md = Media::new(title, url);
+    //                 println!("{md}");
+    //                 //medias.push(Media::new(title, url));
+    //                 medias.push(md);
+    //             }
+    //             Some(medias)
+    //         },
+    //         _ => None,
+    //     }
+    // }
+                        // let title = elem.attr("nonce").expect("Failed to get attribute").to_string().into();
+                        // let url = elem.attr("nonce").expect("Failed to get attribute").to_string().into();
+                        // // let title = elem.attr("title").expect("Failed to get title").to_string().into();
+                        // // let url   = format!("{}{}", YOUTUBE_BASE_URI, elem.attr("href").expect("Failed to get uri")).into();
+                        // let md = Media::new(title, url);
+                        // println!("{md}");
+                        // //medias.push(Media::new(title, url));
+                        // medias.push(md);
+                        // dbg!("Weehaw!", idx);

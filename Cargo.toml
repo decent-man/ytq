@@ -1,0 +1,15 @@
+[package]
+name = "ytq"
+description = "A simple utility to make queries to popular media platforms and display results into formatted output."
+version = "0.1.0"
+edition = "2021"
+exclude = ["/prey"]
+license = "GPL-3.0-only"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ureq = "2.4.0"                # Simple, safe HTTP client
+select = "0.5.0"			  # A library to extract useful data from HTML documents, suitable for web scraping.
+fastrand = "1.7.0"			  # A simple and fast random number generator
+serde_json = "1.0.79"         # A JSON serialization file format
